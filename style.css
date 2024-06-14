@@ -1,0 +1,105 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+
+/* Estilo del header */
+header {
+    background-color: darkgray;
+}
+
+header nav ul {
+    display: flex;
+    list-style: none;
+    justify-content: center;
+    padding: 10px 0;
+}
+
+header nav ul li a {
+    text-decoration: none;
+    margin-left: 10px;
+    font-size: 24px;
+    color: black;
+}
+
+/* Estilo del banner */
+.banner {
+    height: 100vh;
+    width: 100%;
+    background-color: papayawhip;
+    color: black;
+    font-size: 45px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url("https://i.ytimg.com/vi/LgRbRDPtAKQ/maxresdefault.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.contenido {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Estilo de la grilla de productos */
+.grif {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 10px;
+    padding: 20px;
+}
+
+.grif .caja {
+    background-color: antiquewhite;
+    color: black;
+    padding: 10px;
+}
+
+.caja {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    border: 1px solid black;
+    align-items: center;
+    overflow: hidden;
+    transition: transform 0.3s ease;
+}
+
+.caja img {
+    width: 100%;
+    height: auto;
+}
+
+/* Efecto hover para agrandar los productos */
+.caja:hover {
+    transform: scale(1.1);
+}
+
+/* Estilo del footer */
+footer {
+    width: 100%;
+    background-color: darkgray;
+    padding: 10px 0;
+}
+
+footer .autor h3 {
+    text-align: center;
+    margin: 0;
+}
+
+/* Estilos responsivos */
+@media (max-width: 480px) {
+    header nav ul {
+        flex-direction: column;
+    }
+}
