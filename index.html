@@ -8,34 +8,34 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <header>
-        <nav>
-            <ul>
-                <li><a href="">Home</a></li>
-                <li><a href="">Productos</a></li>
-                <li><a href="">Hogar</a></li>
-            </ul>
+    <header class="bg-dark text-white p-3">
+        <nav class="navbar navbar-expand-lg navbar-dark">
+            <div class="container">
+                <a class="navbar-brand" href="#">Mi Página</a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ml-auto">
+                        <li class="nav-item"><a class="nav-link" href="#">Home</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#">Productos</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#">Contacto</a></li>
+                    </ul>
+                </div>
+            </div>
         </nav>
     </header>
 
-    <div class="banner">
-        <div class="contenido">
-            <h1>Bienvenidos</h1>
-        </div>
-    </div>
-
-    <!-- Carousel de Bootstrap -->
     <div id="postresCarousel" class="carousel slide mt-5" data-ride="carousel">
         <div class="carousel-inner">
             <div class="carousel-item active">
-                <img src="https://momentosgastronomicos.com/wp-content/uploads/2016/08/harinaalmendras.jpg" class="d-block w-100" alt="Postre 1">
+                <img src="https://www.cucinare.tv/wp-content/uploads/2022/08/Diseno-sin-titulo-2022-08-24T130528.908.png" class="d-block w-100" alt="Postre 1">
             </div>
             <div class="carousel-item">
-                <img src="https://www.katiebirdbakes.com/wp-content/uploads/2022/10/Small-Batch-One-Banana-Muffins-katiebirdbakes-2.jpg" class="d-block w-100" alt="Postre 2">
+                <img src="https://assets-jpcust.jwpsrv.com/thumbnails/F3RZEqhx-720.jpg" class="d-block w-100" alt="Postre 2">
             </div>
             <div class="carousel-item">
-                <img src="https://www.ohmargott.com/content/uploads/2021/03/IMG_20210306_130100_001.jpg" class="d-block w-100" alt="Postre 3">
-            </div>
+                <img src="https://www.allrecipes.com/thmb/GsldgnTeewAv5eEqoxQ7E1iAKO8=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/157877-vanilla-cupcakes-ddmfs-2X1-0399-1b671dfd598548b1b0339076d062a758.jpg" class="d-block w-100" alt="Postre 3">
         </div>
         <a class="carousel-control-prev" href="#postresCarousel" role="button" data-slide="prev">
             <span class="carousel-control-prev-icon" aria-hidden="true"></span>
@@ -47,41 +47,99 @@
         </a>
     </div>
 
-    <div class="grif mt-5">
-        <div class="caja">
-            <img src="https://momentosgastronomicos.com/wp-content/uploads/2016/08/harinaalmendras.jpg" alt="Budín arándanos">
-            <h1>Budín arándanos</h1>
-            <p>Precio: $750</p>
-        </div>
-
-        <div class="caja">
-            <img src="https://www.katiebirdbakes.com/wp-content/uploads/2022/10/Small-Batch-One-Banana-Muffins-katiebirdbakes-2.jpg" alt="Muffin banana">
-            <h1>Muffin banana</h1>
-            <p>Precio: $600</p>
-        </div>
-
-        <div class="caja">
-            <img src="https://www.ohmargott.com/content/uploads/2021/03/IMG_20210306_130100_001.jpg" alt="Tarta de coco">
-            <h1>Tarta de coco</h1>
-            <p>Precio: $800</p>
-        </div>
-
-        <div class="caja">
-            <img src="https://missgourmand.com/wp-content/uploads/2016/07/receta-tiramisu-casero.jpg" alt="Tiramisú">
-            <h1>Tiramisú</h1>
-            <p>Precio: $1000</p>
-        </div>
-
-        <div class="caja">
-            <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEh3B83yz2q8CR_mheWhyphenhyphenEoxLocQmIFTes665clgpMhShlTFREx6un64i2DeHtzEqDY3HfJsaXAjZz1HbgcojebfrErx8cEFgiDC-c1dESzAeQZth9ZxyI4tjm829BTRvuM6yKsiNpCAzSlC/s1600/DSCN6015.jpg" alt="Tarta de frutilla">
-            <h1>Tarta de frutilla</h1>
-            <p>Precio: $650</p>
-        </div>
-
-        <div class="caja">
-            <img src="https://www.onceuponachef.com/images/2019/04/Chocolate-Mousse-1200x1500.jpg" alt="Mousse chocolate">
-            <h1>Mousse chocolate</h1>
-            <p>Precio: $850</p>
+    <div class="container mt-5">
+        <h1 class="text-center">Nuestros Productos</h1>
+        <div class="row row-cols-1 row-cols-md-3 g-4 mt-3">
+            <div class="col">
+                <div class="card h-100">
+                    <img src="https://momentosgastronomicos.com/wp-content/uploads/2016/08/harinaalmendras.jpg" class="card-img-top" alt="Budín arándanos">
+                    <div class="card-body">
+                        <h2 class="card-title">Budín de arándanos</h2>
+                        <p class="card-text">Precio: $750</p>
+                        <h8 class="card-text">Budín esponjoso con arándanos frescos.</h8>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card h-100">
+                    <img src="https://www.foodlona.com/img/p/3/0/0/300.jpg" class="card-img-top" alt="Cheesecake">
+                    <div class="card-body">
+                        <h2 class="card-title">Cheesecake</h2>
+                        <p class="card-text">Precio: $800</p>
+                        <h8 class="card-text">Tarta de queso con base de galletitas cubierta por frutos del bosque.</h8>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card h-100">
+                    <img src="https://www.ohmargott.com/content/uploads/2021/03/IMG_20210306_130100_001.jpg" class="card-img-top" alt="Tarta de coco">
+                    <div class="card-body">
+                        <h2 class="card-title">Tarta de coco</h2>
+                        <p class="card-text">Precio: $700</p>
+                        <h8 class="card-text">Tarta relleno con dulce de leche, cubierto con coco rallado.</h8>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card h-100">
+                    <img src="https://missgourmand.com/wp-content/uploads/2016/07/receta-tiramisu-casero.jpg" class="card-img-top" alt="Tiramisú">
+                    <div class="card-body">
+                        <h2 class="card-title">Tiramisú</h2>
+                        <p class="card-text">Precio: $1000</p>
+                        <h8 class="card-text">Postre italiano hecho con capas de bizcochos mojados en café, crema mascarpone y cacao en polvo.</h8>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card h-100">
+                    <img src="https://cdn.cookwithbelula.com/receta/budin-de-limon/budin-de-limon-20201010-16.jpg" class="card-img-top" alt="Budín de limón">
+                    <div class="card-body">
+                        <h2 class="card-title">Budín de limón</h2>
+                        <p class="card-text">Precio: $650</p>
+                        <h8 class="card-text">Esponjoso budín cubierto de glaseado.</h8>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card h-100">
+                    <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEh3B83yz2q8CR_mheWhyphenhyphenEoxLocQmIFTes665clgpMhShlTFREx6un64i2DeHtzEqDY3HfJsaXAjZz1HbgcojebfrErx8cEFgiDC-c1dESzAeQZth9ZxyI4tjm829BTRvuM6yKsiNpCAzSlC/s1600/DSCN6015.jpg" class="card-img-top" alt="Tarta de frutilla">
+                    <div class="card-body">
+                        <h2 class="card-title">Tarta de frutilla</h2>
+                        <p class="card-text">Precio: $700</p>
+                        <h8 class="card-text">Tarta rellena de crema chantillí y frutillas.</h8>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card h-100">
+                    <img src="https://azucarledesma.com/wp-content/uploads/2022/05/20231108-AlfajoresMaicena.jpg" class="card-img-top" alt="Alfajores de maicena">
+                    <div class="card-body">
+                        <h2 class="card-title">Alfajores de maicena</h2>
+                        <p class="card-text">Precio: $500</p>
+                        <h8 class="card-text">Alfajores clásicos de maicena rellenos de dulce de leche y cubiertos de coco rallado.</h8>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card h-100">
+                    <img src="https://www.ilolay.com.ar/uploads/recetas/1633203365-Flan-de-Dulce-de-Leche.jpg" class="card-img-top" alt="Flan">
+                    <div class="card-body">
+                        <h2 class="card-title">Flan</h2>
+                        <p class="card-text">Precio: $500</p>
+                        <h8 class="card-text">Flan cremoso de dulce de leche.</h8>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card h-100">
+                    <img src="https://content-cocina.lecturas.com/medio/2018/07/19/tarta-lemon-pie-con-merengue_43048292_800x800.jpg" class="card-img-top" alt="Lemon pie">
+                    <div class="card-body">
+                        <h2 class="card-title">Lemon pie</h2>
+                        <p class="card-text">Precio: $900</p>
+                        <h8 class="card-text">Postre con crema de limón cubierto de crema chantillí.</h8>
+                    </div>
+                </div>
+            </div>
         </div>
     </div>
 

@@ -7,7 +7,7 @@
 body {
     margin: 0;
     padding: 0;
-    font-family: Arial, sans-serif;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', sans-serif;
 }
 
 /* Estilo del header */
@@ -24,49 +24,42 @@ header nav ul {
 
 header nav ul li a {
     text-decoration: none;
-    margin-left: 10px;
-    font-size: 24px;
+    margin: 0 15px;
+    font-size: 18px;
     color: black;
 }
 
 /* Estilo del banner */
 .banner {
-    height: 100vh;
+    height: 50vh;
     width: 100%;
-    background-color: papayawhip;
+    background-color: white (252, 252, 252);
     color: black;
-    font-size: 45px;
+    font-size: 24px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow';
     display: flex;
-    justify-content: center;
-    align-items: center;
-    background-image: url("https://i.ytimg.com/vi/LgRbRDPtAKQ/maxresdefault.jpg");
-    background-repeat: no-repeat;
-    background-size: cover;
+    justify-content:center;
+    align-items:center;
+    text-align: center;
 }
 
-.contenido {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-}
 
 /* Estilo de la grilla de productos */
 .grif {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-    gap: 10px;
-    padding: 20px;
+    gap: 20px;
+    padding: 15px;
 }
 
 .grif .caja {
-    background-color: antiquewhite;
     color: black;
     padding: 10px;
+    text-align: center;
 }
 
 .caja {
-    display: flex;
+    display:flex;
     flex-direction: column;
     justify-content: center;
     border: 1px solid black;
@@ -77,19 +70,18 @@ header nav ul li a {
 
 .caja img {
     width: 100%;
-    height: auto;
+    height:auto;
 }
 
 /* Efecto hover para agrandar los productos */
 .caja:hover {
-    transform: scale(1.1);
+    transform: scale(1.05);
 }
 
 /* Estilo del footer */
 footer {
     width: 100%;
-    background-color: darkgray;
-    padding: 10px 0;
+    padding: 20px 0;
 }
 
 footer .autor h3 {
@@ -101,5 +93,7 @@ footer .autor h3 {
 @media (max-width: 480px) {
     header nav ul {
         flex-direction: column;
+        align-items: center;
     }
+
 }
