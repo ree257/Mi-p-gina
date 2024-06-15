@@ -7,7 +7,7 @@
 body {
     margin: 0;
     padding: 0;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', sans-serif;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow';
 }
 
 /* Estilo del header */
@@ -24,14 +24,14 @@ header nav ul {
 
 header nav ul li a {
     text-decoration: none;
-    margin: 0 15px;
-    font-size: 18px;
+    margin: 10px;
+    font-size: 24px;
     color: black;
 }
 
 /* Estilo del banner */
 .banner {
-    height: 50vh;
+    height: 10vh;
     width: 100%;
     background-color: white (252, 252, 252);
     color: black;
@@ -48,13 +48,13 @@ header nav ul li a {
 .grif {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-    gap: 20px;
+    gap: 100px;
     padding: 15px;
 }
 
 .grif .caja {
     color: black;
-    padding: 10px;
+    padding: 15px;
     text-align: center;
 }
 
@@ -75,13 +75,13 @@ header nav ul li a {
 
 /* Efecto hover para agrandar los productos */
 .caja:hover {
-    transform: scale(1.05);
+    transform: scale(1.1);
 }
 
 /* Estilo del footer */
 footer {
     width: 100%;
-    padding: 20px 0;
+    padding: 100px 0;
 }
 
 footer .autor h3 {
